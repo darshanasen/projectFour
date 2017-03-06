@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Books Books Books</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+</head>
+<body>
+ <div class="title">
+      <h1 id="page-title">Read em' and Weep</h1>
+ </div>
+ <div class="form wrapper">
+ <form action="">
+    <label for="genre">Choose a tearful genre:</label>
+    <select name="genre" id="genre">
+    	<option value=""></option>
+        <option value="hardcover-fiction">Fiction</option>
+        <option value="hardcover-nonfiction">Non-fiction</option>
+        <option value="picture-books">Books for Young'Uns</option>
+        <option value="young-adult-hardcover">Young Adult</option>
+        <option value="science">Science</option>
+        <option value="advice-how-to-and-miscellaneous">Miscellaneous!</option>
+    </select>
+  </form>
+  </div>
+
+ <div class="choiceInfo wrapper" id="bookChoice"></div>
+
+<div class="spotify wrapper">
+ <div class="playlist" id="playlist">
+ </div>
+ </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script src="app.js">
+//type in book you are currently reading
+//select genre of book you wish to read
+//genre is subbed in to NYT bestsetllers list
+		--> //(AND DATE!?)
+
+//goodreads generates your book
+//NYT API generates random book choice 
+		-->//(random book choice's rating is compared to your initial book rating)
+		-->//if rating is lower, generator cycles through again
+
+//chosen book's info is displayed from Goodreads
+//iDreamBooks critic info widget is displayed
+		-->//TPL availability is shown?
+		-->//Yoda recommends book
+</script>
+</body>
+</html>
